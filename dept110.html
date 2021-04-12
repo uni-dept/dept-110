@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>110年校系代碼查詢</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Tocas UI -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js"></script>
+        <!-- / Tocas UI-->
+
+        <style type="text/css">
+            .segment {
+                max-width: 300px;
+            }
+        </style>
+    </head>
+	
+    <!-- 神奇庫庫scrpit -->
+	<script type="text/javascript">
+		function web()
+		{
+			var v = document.getElementById("number").value;
+			let longString = "https://www.cac.edu.tw/apply110/system/110_aColQry4qy_forapply_o5wp6ju/html/110_"+ v +".htm";
+			return longString;
+		}
+	</script>
+
+    <!-- 神奇庫庫css -->
+    <style>
+    .content.flex{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin: auto
+    }
+    </style>
+
+    <!-- 頁面開始 -->
+    <body>        
+
+        <div class="ts narrow container">
+            <br>
+            <br>
+
+            <!-- 頁面標題 -->
+            <h1 class="ts center aligned header">
+                110年校系代碼查詢
+                <br>
+            </h1>
+
+            <!-- 輸入範圍 -->
+            <div class="ts centered secondary segment">
+
+                <form class="ts form">
+                    <!-- 代碼欄位 -->
+                    <div class="field">
+                        <label>輸入代碼六碼</label>
+                        <input type="text" name="code" id="number" placeholder="012345">
+                    </div>
+
+                    <!-- 按鈕 -->
+                    <button type="button" class="ts positive fluid button" onclick="javascript:location.href=web();"/>前往網址</button>
+                </form>
+            </div>
+            
+            <br>
+            <div class="ts section divider"></div>
+
+            <div class="ts medium header">關於這個頁面</div>
+            <p>這只是我做好玩的，但我會完善它。<br>為什麼是校系代碼？因為我想不到其它可以做的了，誒嘿。</p>
+        </div>
+        
+    </body>
+
+</html>
